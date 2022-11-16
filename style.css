@@ -1,23 +1,23 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: sans-serif;
+  justify-content: center;
   min-height: 100vh;
-  background: #11021f;
+  background: #0c0116;
+  display: flex;
+  align-items: center;
 }
 
 .form {
   position: relative;
-  background: #1e04b1;
+  background: #a54bf9;
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgb(116, 119, 114);
+  box-shadow: 0px 0px 10px 0px rgb(116, 119, 114);
   border-radius: 5px;
   padding: 60px 15px;
   width: 270px;
@@ -36,15 +36,15 @@ body {
 
 .content {
   width: 100%;
-  height: 100%;
   padding: 25px;
+  height: 100%;
 }
 
 .form-inner h2 {
   text-align: center;
-  color: #d7a3d7;
   padding-top: 35px;
   font-size: 25px;
+  color: #d7a3d7;
 }
 
 .input {
@@ -65,13 +65,13 @@ body {
   width: 100%;
   cursor: pointer;
   color: white;
-  background: #800080;
-  padding: 10px;
   border: none;
   font-size: 18px;
   border-radius: 10px;
-  outline: none;
   transition: 0.4s;
+  padding: 10px;
+  outline: none;
+  background: #800080;
 }
 
 .btn:hover {
@@ -88,7 +88,7 @@ body {
   background: #ffda05;
   animation: 5s span1 infinite linear;
   animation-delay: 1s;
-  top: 0px;
+  top: 0;
   left: -48%;
 }
 
@@ -101,17 +101,17 @@ body {
 
 .form span:nth-child(3) {
   background: #800080;
-  top: 0;
-  right: -48%;
+  top: 0px;
   animation: 5s span3 infinite linear;
+  right: -48%;
 }
 
 .form span:nth-child(4) {
-  background: #ff0000;
+  animation: 5s span4 infinite linear;
   animation-delay: 1s;
+  background: #ff0000;
   bottom: 0;
   right: -48%;
-  animation: 5s span4 infinite linear;
 }
 
 @keyframes span1 {
@@ -122,18 +122,19 @@ body {
 
   25% {
     top: -48%;
-    left: -98%;
+    left: 98%;
   }
 
   50% {
-    top: -98%;
-    left: -98%;
+    top: 98%;
+    left: 98%;
   }
 
   75% {
     top: 98%;
-    left: 98%;
+    left: -48%;
   }
+
   100% {
     top: -48%;
     left: -48%;
@@ -142,27 +143,28 @@ body {
 
 @keyframes span2 {
   0% {
-    top: -48%;
-    left: -48%;
+    bottom: -48%;
+    right: -48%;
   }
 
   25% {
-    top: -48%;
-    left: -98%;
+    bottom: -48%;
+    right: 98%;
   }
 
   50% {
-    top: -98%;
-    left: -98%;
+    bottom: 98%;
+    right: 98%;
   }
 
   75% {
-    top: 98%;
-    left: 98%;
+    bottom: 98%;
+    right: -48%;
   }
+
   100% {
-    top: -48%;
-    left: -48%;
+    bottom: -48%;
+    right: -48%;
   }
 }
 
@@ -174,18 +176,19 @@ body {
 
   25% {
     top: -48%;
-    left: -98%;
+    left: 98%;
   }
 
   50% {
-    top: -98%;
-    left: -98%;
+    top: 98%;
+    left: 98%;
   }
 
   75% {
     top: 98%;
-    left: 98%;
+    left: -48%;
   }
+
   100% {
     top: -48%;
     left: -48%;
@@ -194,26 +197,27 @@ body {
 
 @keyframes span4 {
   0% {
-    top: -48%;
-    left: -48%;
+    bottom: -48%;
+    right: -48%;
   }
 
   25% {
-    top: -48%;
-    left: -98%;
+    bottom: -48%;
+    right: 98%;
   }
 
   50% {
-    top: -98%;
-    left: -98%;
+    bottom: 98%;
+    right: 98%;
   }
 
   75% {
-    top: 98%;
-    left: 98%;
+    bottom: 98%;
+    right: -48%;
   }
+
   100% {
-    top: -48%;
-    left: -48%;
+    bottom: -48%;
+    right: -48%;
   }
 }
